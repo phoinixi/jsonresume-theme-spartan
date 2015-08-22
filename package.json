@@ -1,14 +1,15 @@
 {
   "name": "jsonresume-theme-digital-paper",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Digital Paper theme for JSON Resume",
   "author": "Francesco Espsoito",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francescoes/jsonresume-theme-digitalePaper"
+    "url": "https://github.com/francescoes/jsonresume-theme-digital-paper"
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
+    "handlebars": "^2.0.0-alpha.4",
+    "octicons": "*"
   }
 }

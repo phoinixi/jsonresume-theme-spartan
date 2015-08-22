@@ -7,7 +7,7 @@
 	
 	<title>Richard Hendriks</title>
 	
-	<link rel="stylesheet" href="octicons.css">
+	<link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css" />
 
 	<style>
 	html, body, div, span, applet, object, iframe,
@@ -152,22 +152,13 @@ section > header::after {
 	clear: both;
 }
 
-section div::before {
+.octicon {
 	font: normal normal normal 16px/1 octicons;
 	display: inline-block;
 	text-decoration: none;
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
-
-	/*	octicons style	*/
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 
 ul {
@@ -281,22 +272,24 @@ h2.section-title {
 	border-left: 5px solid #EB5F51;
 }
 
-#references .name {
-	font-weight: 700;
-}
 .website::before {
+	font: normal normal normal 16px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+
+	/*	octicons style	*/
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
 	content: '\f05c';
-}
-.email::before {
-	content: '\f03b'
-}
-
-.phone::before {
-	content: '\f038'
-}
-
-#location::before {
-	content: '\f060'
 }
 
 /******************
@@ -406,6 +399,7 @@ h2.section-title {
 		<section id="basics">
 			
 				<div id="location">
+					<span class="octicon octicon-location"></span>
 					<span class="address">
 						2712 Broadway St,
 					</span>
@@ -428,9 +422,11 @@ h2.section-title {
 					<a href="http://richardhendricks.com">http://richardhendricks.com</a>
 				</div>
 				<div class="email">
+					<span class="octicon octicon-mail"></span>
 					<a href="mailto:richard.hendriks@gmail.com">richard.hendriks@gmail.com</a>
 				</div>
 				<div class="phone">
+					<span class="octicon octicon-device-mobile"></span>
 					(912) 555-4321
 				</div>
 			</div>

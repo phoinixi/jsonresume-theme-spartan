@@ -140,22 +140,13 @@ section > header::after {
 	clear: both;
 }
 
-section div::before {
+.octicon {
 	font: normal normal normal 16px/1 octicons;
 	display: inline-block;
 	text-decoration: none;
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
-
-	/*	octicons style	*/
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 
 ul {
@@ -269,22 +260,24 @@ h2.section-title {
 	border-left: 5px solid #EB5F51;
 }
 
-#references .name {
-	font-weight: 700;
-}
 .website::before {
+	font: normal normal normal 16px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+
+	/*	octicons style	*/
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
 	content: '\f05c';
-}
-.email::before {
-	content: '\f03b'
-}
-
-.phone::before {
-	content: '\f038'
-}
-
-#location::before {
-	content: '\f060'
 }
 
 /******************

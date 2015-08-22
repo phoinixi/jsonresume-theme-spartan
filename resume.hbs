@@ -7,10 +7,9 @@
 	
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 	
-	<link rel="stylesheet" href="octicons.css">
+	<link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css" />
 
 	<style>
-	{{{octicons}}}
 	{{{css}}}
 	</style>
 
@@ -30,6 +29,7 @@
 			{{#location}}
 				<div id="location">
 					{{#if address}}
+					<span class="octicon octicon-location"></span>
 					<span class="address">
 						{{address}},
 					</span>
@@ -65,11 +65,13 @@
 				{{/if}}
 				{{#if email}}
 				<div class="email">
+					<span class="octicon octicon-mail"></span>
 					<a href="mailto:{{email}}">{{email}}</a>
 				</div>
 				{{/if}}
 				{{#if phone}}
 				<div class="phone">
+					<span class="octicon octicon-device-mobile"></span>
 					{{phone}}
 				</div>
 				{{/if}}
