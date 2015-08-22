@@ -7,7 +7,7 @@
 	
 	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
 	
-	<link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<style>
 	{{{css}}}
@@ -29,7 +29,7 @@
 			{{#location}}
 				<div id="location">
 					{{#if address}}
-					<span class="octicon octicon-location"></span>
+					<span class="fa fa-map-marker"></span>
 					<span class="address">
 						{{address}},
 					</span>
@@ -65,13 +65,13 @@
 				{{/if}}
 				{{#if email}}
 				<div class="email">
-					<span class="octicon octicon-mail"></span>
+					<span class="fa fa-envelope"></span>
 					<a href="mailto:{{email}}">{{email}}</a>
 				</div>
 				{{/if}}
 				{{#if phone}}
 				<div class="phone">
-					<span class="octicon octicon-device-mobile"></span>
+					<span class="fa fa-phone-square"></span>
 					{{phone}}
 				</div>
 				{{/if}}

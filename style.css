@@ -261,23 +261,24 @@ h2.section-title {
 }
 
 .website::before {
-	font: normal normal normal 16px/1 octicons;
 	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none;
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
 
-	/*	octicons style	*/
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	content: '\f14c';
+}
 
-	content: '\f05c';
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
 }
 
 /******************

@@ -7,7 +7,7 @@
 	
 	<title>Richard Hendriks</title>
 	
-	<link rel="stylesheet" href="node_modules/octicons/octicons/octicons.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	<style>
 	html, body, div, span, applet, object, iframe,
@@ -273,23 +273,24 @@ h2.section-title {
 }
 
 .website::before {
-	font: normal normal normal 16px/1 octicons;
 	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	text-decoration: none;
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
 
-	/*	octicons style	*/
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	content: '\f14c';
+}
 
-	content: '\f05c';
+.fa {
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
 }
 
 /******************
@@ -399,7 +400,7 @@ h2.section-title {
 		<section id="basics">
 			
 				<div id="location">
-					<span class="octicon octicon-location"></span>
+					<span class="fa fa-map-marker"></span>
 					<span class="address">
 						2712 Broadway St,
 					</span>
@@ -422,11 +423,11 @@ h2.section-title {
 					<a href="http://richardhendricks.com">http://richardhendricks.com</a>
 				</div>
 				<div class="email">
-					<span class="octicon octicon-mail"></span>
+					<span class="fa fa-envelope"></span>
 					<a href="mailto:richard.hendriks@gmail.com">richard.hendriks@gmail.com</a>
 				</div>
 				<div class="phone">
-					<span class="octicon octicon-device-mobile"></span>
+					<span class="fa fa-phone-square"></span>
 					(912) 555-4321
 				</div>
 			</div>

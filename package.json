@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-digital-paper",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Digital Paper theme for JSON Resume",
   "author": "Francesco Espsoito",
   "repository": {
@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^2.0.0-alpha.4",
-    "octicons": "*"
+    "handlebars": "^2.0.0-alpha.4"
   }
 }
