@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************
+*		SMARTPHONES		
+****************/
+
+/*	General elements	*/
+
+em {
+	color: #757575;
+}
+p {
+	margin: 1em 0;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+strong {
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.275em
+}
+a {
+	color: #EB5F51;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+body {
+	background: #f2f2f2;
+	font: 14px "Helvetica Neue" Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+#resume {
+	padding: 1em 0;
+	margin: 3em auto;
+}
+
+#header {
+	padding: 0 2em;
+	margin-bottom: 1em;
+}
+
+header .name {
+	line-height: 1;
+}
+
+header .label {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #757575;
+}
+
+section {
+	padding: 1em 2em;
+	border-bottom: 1px solid #757575;
+	margin: 0em 0.5em 2em;
+}
+
+section#references {
+	border-bottom:none;
+}
+
+section#basics {
+	background: inherit;
+	margin-bottom: 1em;
+	border-top: 1px solid #757575;
+	border-bottom: 1px solid #757575;
+}
+	
+section > header > h3 {
+	float:left;
+}
+
+section > header > .date {
+	float: right;
+}
+
+section > header::after {
+	display: table;
+	content: " ";
+	clear: both;
+}
+
+section div::before {
+	font: normal normal normal 16px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+
+	/*	octicons style	*/
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+ul {
+	margin-top: 1em; 
+}
+
+div.item {
+	margin: 1.5em 0;
+}
+
+p {
+	text-align: justify;
+}
+
+h2.section-title {
+	text-align: left;
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #757575;
+	padding: 0 1.5em;
+	margin-bottom: 0.1275em;
+}
+
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+
+.position, .area, .institution {
+	font-weight: 700;
+}
+
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+
+#profiles, #skills {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+#profiles .item {
+	padding: 0 1.8em;
+}
+
+
+.keywords li{
+	display: inline-block;
+	background: #f0f0f0;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #333;
+	padding: 0.4em 0.8em;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+#skills .item {
+	min-width: 15em;
+	padding: 0 2em 0 0;
+}
+
+#skills .level .bar {
+	border: 1px solid #ddd;
+	display: block;
+	width: 10em;
+	height: 5px;
+	margin: 0em 0 1em 0;
+	position: relative;
+}
+
+#skills .level .bar::after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	background: black;
+	height: 5px;
+}
+
+#skills .level.beginner .bar::after {
+	background: #EB5F51;
+	width: 2.5em;
+} 
+
+#skills .level.intermediate .bar::after {
+	background: #ffdf1f;
+	width: 5em;
+} 
+
+#skills .level.advanced .bar::after {
+	background: #59C596;
+	width: 7.5em;
+} 
+
+#skills .level.master .bar::after {
+	background: #5CB85C;
+	width: 10em;
+}
+
+#references .item {
+	padding-left: 1em;
+	border-left: 5px solid #EB5F51;
+}
+
+#references .name {
+	font-weight: 700;
+}
+.website::before {
+	content: '\f05c';
+}
+.email::before {
+	content: '\f03b'
+}
+
+.phone::before {
+	content: '\f038'
+}
+
+#location::before {
+	content: '\f060'
+}
+
+/******************
+*		HELPER CLASSES	
+******************/
+.clear {
+	display: table;
+	clear: both;
+}
+
+/****************
+*		TABLET
+****************/
+@media screen and (min-width: 602px) { 
+	#resume {
+		width: 550px;
+		margin: 0 auto;
+	}
+}
+
+/****************
+*		LAPTOP	
+****************/
+@media screen and (min-width: 1025px) { 
+	#resume {
+		width: 52em;		
+		padding: 3em;
+		margin: 3em auto;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+	}
+	
+	.section {
+		display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+    -webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+  	justify-content: space-between;
+  	margin-bottom: 3em;
+  	margin-top: 3em;
+  	border-bottom: 1px solid #757575;
+	}
+
+	.section:last-of-type {
+		border-bottom: none;
+		margin-bottom: 0;
+	}
+	section > header {
+		line-height: 1;
+		padding-bottom: 1em; 
+	}
+
+	h2.section-title {
+		line-height: 1.1;
+	}
+	
+	section {
+		width: 34.5em;
+		padding: 0;
+		margin-top:0;
+		border: none;
+	}
+	
+	section p {
+		margin: 0;
+	}
+
+	section#basics {
+		width: auto;
+		padding-top: 1.75em;
+		padding-left: 1.5em;
+	}
+	
+	#profiles .item{
+		padding-top: 1.75em;
+	}
+
+	div {
+		padding: 0;
+	}
+
+	#skills .item {
+		padding-left:0;
+		margin-top: 0;
+	}
+	
+	div.item {
+		margin-top: 0;
+	}
+
+}
