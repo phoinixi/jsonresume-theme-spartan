@@ -1,16 +1,13 @@
 <!doctype html>
 <html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-	
-	<title>Francesco Esposito</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<style>
-	/********************************************
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui" />
+		<title>Francesco Esposito</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<style>
+			/********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
@@ -56,8 +53,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 /* Custom reset */
 .main-summary p, 
 #publications .item,
@@ -72,8 +67,6 @@ table {
 /****************
 *		SMARTPHONES		
 ****************/
-
-/*	General elements	*/
 em {
 	color: #757575;
 }
@@ -100,9 +93,6 @@ div.item:last-of-type {
 	margin: 0;
 	border-bottom: none;
 	padding-bottom: 0;
-}
-#profiles div.item {
-	margin: 1em 0 0;
 }
 p {
 	text-align: justify;
@@ -189,7 +179,6 @@ section#work,
 .main-summary section {
 	padding-bottom: 2em;
 }
-
 header::after {
 	display: table;
 	content: " ";
@@ -203,6 +192,56 @@ h2.section-title {
 	padding: 1em 1.3em 0;
 	margin-bottom: 0.1275em;
 }
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+.position, .area, .institution {
+	font-weight: 700;
+}
+#interests .item, #languages .item {
+	padding: 0 2em 2em 0;
+	border-bottom: none;
+}
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
+}
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  	padding-bottom: 1em;
+}
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+#profiles .item {
+	margin: 1em 0 0;
+	padding: 0 1.8em;
+	border-bottom: none;
+}
+#interests ul {
+	margin-top: 0.5em;
+}
+#publications .name {
+	font-style: italic;
+}
 .courses li, .keywords li{
 	display: inline-block;
 	background: #f0f0f0;
@@ -214,51 +253,16 @@ h2.section-title {
 	border-right: 1px solid #ddd;
 	border-radius: 3px;
 }
-#interests ul {
-	margin-top: 0.5em;
-}
-#publications .name {
-	font-style: italic;
-}
-.date {
-	font-weight: 700;
-	color: #757575;
-}
 #publications .date {
 	font-weight: normal;
 	color: #000;	
-}
-.position, .area, .institution {
-	font-weight: 700;
-}
-#profiles, #location {
-	box-shadow: none;
-	padding: 0;
-}
-#profiles, #skills, #interests, #languages {
-	display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  padding-bottom: 1em;
-}
-#profiles .item {
-	padding: 0 1.8em;
-	border-bottom: none;
-}
-#interests .item, #languages .item {
-	padding: 0 2em 2em 0;
-	border-bottom: none;
 }
 #skills .item {
 	min-width: 15em;
 	padding: 0 2em 3em 0;
 	border-bottom: none;
 }
+
 
 /* Skills chart */
 #skills .level .bar {
@@ -296,19 +300,6 @@ h2.section-title {
 #references .item {
 	padding-left: 1em;
 	border-left: 5px solid #EB5F51;
-}
-.website::before {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-	content: '\f14c';
 }
 
 
@@ -413,377 +404,374 @@ h2.section-title {
 	}
 
 }
-	</style>
-
+		</style>
 	</head>
+
 	<body>
-	
-	<div id="resume">
-
-		<header id="header">
-				<div>
-					<h1 class="name">Francesco Esposito</h1>
-					<h2 class="label">Front End Software Engineer</h2>
-				</div>
-
-		</header>
-		
-		<section id="basics">
-			
-				<div id="location">
-					<span class="fa fa-map-marker"></span>
-					<span class="address">
-						Loorenstrasse 74,
-					</span>
-					<span class="postalCode">
-						8053,
-					</span>
-					<span class="city">
-						Zürich
-					</span>
-					<span class="countryCode">
-						(CH),
-					</span>
-					<span class="region">
-						Switzerland
-					</span>
-				</div>
-
-			<div class="contact">
-				<div class="website">
-					<a href="http://francescoes.com">http://francescoes.com</a>
-				</div>
-				<div class="email">
-					<span class="fa fa-envelope"></span>
-					<a href="mailto:fraesps@gmail.com">fraesps@gmail.com</a>
-				</div>
-				<div class="phone">
-					<span class="fa fa-phone-square"></span>
-					(+41) 77 98 212 54
-				</div>
-			</div>
-		
-
-			<div id="profiles">
-				<div class="item">
-					<strong class="network">
-						Linkedin
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.linkedin.com/in/francescoes">francescoes</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<strong class="network">
-						Github
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://www.github.com/francescoes">francescoes</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<strong class="network">
-						Stack Overflow
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="http://stackoverflow.com/users/4457937/francesco-es?tab=profile">francesco-es</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="section main-summary">
-			<h2 class='section-title'>Summary</h2>
-			<section>
-				<p>I&#x27;m passionate about Web developing and I am currently focused on Front-end development and User Experience. I&#x27;m also enthusiastic about Linked Data and Data Integration. I love to create easy-to-use User Interface.</p>
-			</section>
-		</section>
-
-		</section>
-
-		<section class="section">
-			<h2 class='section-title'>Work</h2>
-			<section id="work">
-				<header>
-					<h3 class="name">
-						F&amp;P Personal Robotics
-					</h3>
-					<div class="date">
-						<span class="startDate">
-							2015-07-01
-						</span>
-						<span class="endDate">
-							- Present
-						</span>
-					</div>
-				</header>
-				<div class="item">
-				<div class="position">
-					Front End Software Engineer
-				</div>
-				<div class="website">
-					<a href="http://www.fp-robotics.com">http://www.fp-robotics.com</a>
-				</div>
-			</div>
-				<header>
-					<h3 class="name">
-						YouRehab AG
-					</h3>
-					<div class="date">
-						<span class="startDate">
-							2014-09-01
-						</span>
-						<span class="endDate">
-							- 2015-06-19
-						</span>
-					</div>
-				</header>
-				<div class="item">
-				<div class="position">
-					Junior Full Stack Software Engineer
-				</div>
-				<div class="website">
-					<a href="http://www.yourehab.com">http://www.yourehab.com</a>
-				</div>
-				<div class="summary">
-					<p>Develop software that helps the creation and the management of interactive rehabilitation plans for patients with sensory-motor and cognitive impairments</p>
-				</div>
-				<ul class="highlights">
-					<li>Focused on web technologies, particularly Ruby on Rails, HTML5, CSS3 and JavaScript</li>
-					<li>Emphasis on User Experience</li>
-				</ul>
-			</div>
-				<header>
-					<h3 class="name">
-						YouRehab AG
-					</h3>
-					<div class="date">
-						<span class="startDate">
-							2014-03-01
-						</span>
-						<span class="endDate">
-							- 2015-07-01
-						</span>
-					</div>
-				</header>
-				<div class="item">
-				<div class="position">
-					Software Engineer Intern
-				</div>
-				<div class="website">
-					<a href="http://www.yourehab.com">http://www.yourehab.com</a>
-				</div>
-				<div class="summary">
-					<p>Analysis and Visualisation of raw data concerning patient&#x27;s rehabilitation history</p>
-				</div>
-				<ul class="highlights">
-					<li>Focused on web development, particularly  .NET and Javascript for data visualization (d3.js)</li>
-					<li>Research activity about data visualization techniques</li>
-				</ul>
-			</div>
-				<header>
-					<h3 class="name">
-						IT Engineering
-					</h3>
-					<div class="date">
-						<span class="startDate">
-							2014-03-01
-						</span>
-						<span class="endDate">
-							- 2015-07-01
-						</span>
-					</div>
-				</header>
-				<div class="item">
-				<div class="position">
-					Junior Web Developer
-				</div>
-				<div class="website">
-					<a href="http://www.itengineering.it/.com">http://www.itengineering.it/.com</a>
-				</div>
-				<div class="summary">
-					<p>Develop e-commerce solutions for small companies</p>
-				</div>
-				<ul class="highlights">
-					<li>Focused on  Wordpress and Magento, particularly templates creation and customisation</li>
-				</ul>
-			</div>
-			</section>
-		</section>
-
-	
-	<section class="section">
-		<h2 class='section-title'>Education</h2>
-		<section id="education">
-				<header>
-						<h3 class="institution">
-							Universitá degli Studi di Salerno
-						</h3>
-					<div class="date">
-						<span class="startDate">
-							2012-01-10
-						</span>
-						<span class="endDate">
-							- 2014-12-19
-						</span>
-					</div>
-				</header>
-				<div class="item">
-						<div class="studyType">
-							MSc
-						</div>
-						<div class="area">
-							Software Engineering
-						</div>
+		<div id="resume">
+				<header id="header">
 						<div>
-							<span class="fa fa-graduation-cap"></span>
-							<span class='gpa'> GPA: 3.64</span>
+							<h1 class="name">Francesco Esposito</h1>
+							<h2 class="label">Front End Software Engineer</h2>
 						</div>
-						<ul class="courses">
-							<li>Computer Forensics</li>
-							<li>Data Integration</li>
+
+				</header>
+				
+				<section id="basics">
+					
+						<div id="location">
+							<span class="fa fa-map-marker"></span>
+							<span class="address">
+								Loorenstrasse 74,
+							</span>
+							<span class="postalCode">
+								8053,
+							</span>
+							<span class="city">
+								Zürich
+							</span>
+							<span class="countryCode">
+								(CH),
+							</span>
+							<span class="region">
+								Switzerland
+							</span>
+						</div>
+
+					<div class="contact">
+						<div class="website">
+							<a href="http://francescoes.com">http://francescoes.com</a>
+						</div>
+						<div class="email">
+							<span class="fa fa-envelope"></span>
+							<a href="mailto:fraesps@gmail.com">fraesps@gmail.com</a>
+						</div>
+						<div class="phone">
+							<span class="fa fa-phone-square"></span>
+							(+41) 77 98 212 54
+						</div>
+					</div>
+				
+
+					<div id="profiles">
+						<div class="item">
+							<strong class="network">
+								Linkedin
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="http://www.linkedin.com/in/francescoes">francescoes</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<strong class="network">
+								Github
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="http://www.github.com/francescoes">francescoes</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<strong class="network">
+								Stack Overflow
+							</strong>
+							<div class="username">
+								<div class="url">
+									<a href="http://stackoverflow.com/users/4457937/francesco-es?tab=profile">francesco-es</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section main-summary">
+					<h2 class='section-title'>Summary</h2>
+					<section>
+						<p>I&#x27;m passionate about Web developing and I am currently focused on Front-end development and User Experience. I&#x27;m also enthusiastic about Linked Data and Data Integration. I love to create easy-to-use User Interface.</p>
+					</section>
+				</section>
+
+				</section>
+
+				<section class="section">
+					<h2 class='section-title'>Work</h2>
+					<section id="work">
+						<header>
+							<h3 class="name">
+								F&amp;P Personal Robotics
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									2015-07-01
+								</span>
+								<span class="endDate">
+									- Present
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Front End Software Engineer
+						</div>
+						<div class="website">
+							<a href="http://www.fp-robotics.com">http://www.fp-robotics.com</a>
+						</div>
+					</div>
+						<header>
+							<h3 class="name">
+								YouRehab AG
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									2014-09-01
+								</span>
+								<span class="endDate">
+									- 2015-06-19
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Junior Full Stack Software Engineer
+						</div>
+						<div class="website">
+							<a href="http://www.yourehab.com">http://www.yourehab.com</a>
+						</div>
+						<div class="summary">
+							<p>Develop software that helps the creation and the management of interactive rehabilitation plans for patients with sensory-motor and cognitive impairments</p>
+						</div>
+						<ul class="highlights">
+							<li>Focused on web technologies, particularly Ruby on Rails, HTML5, CSS3 and JavaScript</li>
+							<li>Emphasis on User Experience</li>
 						</ul>
-				</div>
-				<header>
-						<h3 class="institution">
-							Universitá degli Studi di Salerno
-						</h3>
-					<div class="date">
-						<span class="startDate">
-							2005-09-20
-						</span>
-						<span class="endDate">
-							- 2010-12-16
-						</span>
 					</div>
-				</header>
-				<div class="item">
-						<div class="studyType">
-							BSc
+						<header>
+							<h3 class="name">
+								YouRehab AG
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									2014-03-01
+								</span>
+								<span class="endDate">
+									- 2015-07-01
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Software Engineer Intern
 						</div>
-						<div class="area">
-							Computer Science
+						<div class="website">
+							<a href="http://www.yourehab.com">http://www.yourehab.com</a>
 						</div>
-						<div>
-							<span class="fa fa-graduation-cap"></span>
-							<span class='gpa'> GPA: 3.64</span>
+						<div class="summary">
+							<p>Analysis and Visualisation of raw data concerning patient&#x27;s rehabilitation history</p>
 						</div>
-				</div>
-		</section>
-	</section>
-	
-	
-	
-		<section class="section">
-			<h2 class='section-title'>Skills</h2>
-			<section id="skills">
-				<div class="item">
-					<div class="name">
-						Web Development
+						<ul class="highlights">
+							<li>Focused on web development, particularly  .NET and Javascript for data visualization (d3.js)</li>
+							<li>Research activity about data visualization techniques</li>
+						</ul>
 					</div>
-					<div class="level advanced">
-						<em>Advanced</em>
-						<div class="bar"></div>
+						<header>
+							<h3 class="name">
+								IT Engineering
+							</h3>
+							<div class="date">
+								<span class="startDate">
+									2014-03-01
+								</span>
+								<span class="endDate">
+									- 2015-07-01
+								</span>
+							</div>
+						</header>
+						<div class="item">
+						<div class="position">
+							Junior Web Developer
+						</div>
+						<div class="website">
+							<a href="http://www.itengineering.it/.com">http://www.itengineering.it/.com</a>
+						</div>
+						<div class="summary">
+							<p>Develop e-commerce solutions for small companies</p>
+						</div>
+						<ul class="highlights">
+							<li>Focused on  Wordpress and Magento, particularly templates creation and customisation</li>
+						</ul>
 					</div>
-					<ul class="keywords">
-						<li>Javascript</li>
-						<li>HTML</li>
-						<li>CSS</li>
-					</ul>
-				</div>
-				<div class="item">
-					<div class="name">
-						GIT
-					</div>
-					<div class="level advanced">
-						<em>Advanced</em>
-						<div class="bar"></div>
-					</div>
-					<ul class="keywords">
-						<li>Github</li>
-						<li>Git flow</li>
-					</ul>
-				</div>
-			</section>
-		</section>
+					</section>
+				</section>
 
-		<section class="section">
-			<h2 class='section-title'>Languages</h2>
-			<section id="languages">
-				<div class="item">
-					<div class="language">
-						Italian
-					</div>
-					<div class="fluency">
-						<em>Native speaker</em>
-					</div>
-				</div>
-				<div class="item">
-					<div class="language">
-						English
-					</div>
-					<div class="fluency">
-						<em>Fluent</em>
-					</div>
-				</div>
-				<div class="item">
-					<div class="language">
-						Spanish
-					</div>
-					<div class="fluency">
-						<em>Basic</em>
-					</div>
-				</div>
-			</section>
-		</section>
+		
+				<section class="section">
+					<h2 class='section-title'>Education</h2>
+					<section id="education">
+							<header>
+									<h3 class="institution">
+										Universitá degli Studi di Salerno
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2012-01-10
+									</span>
+									<span class="endDate">
+										- 2014-12-19
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										MSc
+									</div>
+									<div class="area">
+										Software Engineering
+									</div>
+									<div>
+										<span class="fa fa-graduation-cap"></span>
+										<span class='gpa'> GPA: 3.64</span>
+									</div>
+									<ul class="courses">
+										<li>Computer Forensics</li>
+										<li>Data Integration</li>
+									</ul>
+							</div>
+							<header>
+									<h3 class="institution">
+										Universitá degli Studi di Salerno
+									</h3>
+								<div class="date">
+									<span class="startDate">
+										2005-09-20
+									</span>
+									<span class="endDate">
+										- 2010-12-16
+									</span>
+								</div>
+							</header>
+							<div class="item">
+									<div class="studyType">
+										BSc
+									</div>
+									<div class="area">
+										Computer Science
+									</div>
+									<div>
+										<span class="fa fa-graduation-cap"></span>
+										<span class='gpa'> GPA: 3.64</span>
+									</div>
+							</div>
+					</section>
+				</section>
+		
+		
+		
+				<section class="section">
+					<h2 class='section-title'>Skills</h2>
+					<section id="skills">
+						<div class="item">
+							<div class="name">
+								Web Development
+							</div>
+							<div class="level advanced">
+								<em>Advanced</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Javascript</li>
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								GIT
+							</div>
+							<div class="level advanced">
+								<em>Advanced</em>
+								<div class="bar"></div>
+							</div>
+							<ul class="keywords">
+								<li>Github</li>
+								<li>Git flow</li>
+							</ul>
+						</div>
+					</section>
+				</section>
 
-		<section class="section">
-			<h2 class='section-title' class='section-title'>Interests</h2>
-			<section id="interests">
-				<div class="item">
-					<div class="name">
-						Semantic Web
-					</div>
-					<ul class="keywords">
-						<li>Microdata</li>
-						<li>Linked Data</li>
-					</ul>
-				</div>
-				<div class="item">
-					<div class="name">
-						Cooking
-					</div>
-					<ul class="keywords">
-						<li>Mediterranean diet</li>
-						<li>Neapolitan cuisine</li>
-					</ul>
-				</div>
-				<div class="item">
-					<div class="name">
-						Football
-					</div>
-					<ul class="keywords">
-						<li>SSC Napoli</li>
-					</ul>
-				</div>
-			</section>
-		</section>
-	
-		<section class="section">
-			<h2 class='section-title'>References</h2>
-			<section id="references">
-				<div class="item">
-				</div>
-			</section>
-		</section>
-	
-	</div>
+				<section class="section">
+					<h2 class='section-title'>Languages</h2>
+					<section id="languages">
+						<div class="item">
+							<div class="language">
+								Italian
+							</div>
+							<div class="fluency">
+								<em>Native speaker</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								English
+							</div>
+							<div class="fluency">
+								<em>Fluent</em>
+							</div>
+						</div>
+						<div class="item">
+							<div class="language">
+								Spanish
+							</div>
+							<div class="fluency">
+								<em>Basic</em>
+							</div>
+						</div>
+					</section>
+				</section>
 
+				<section class="section">
+					<h2 class='section-title' class='section-title'>Interests</h2>
+					<section id="interests">
+						<div class="item">
+							<div class="name">
+								Semantic Web
+							</div>
+							<ul class="keywords">
+								<li>Microdata</li>
+								<li>Linked Data</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Cooking
+							</div>
+							<ul class="keywords">
+								<li>Mediterranean diet</li>
+								<li>Neapolitan cuisine</li>
+							</ul>
+						</div>
+						<div class="item">
+							<div class="name">
+								Football
+							</div>
+							<ul class="keywords">
+								<li>SSC Napoli</li>
+							</ul>
+						</div>
+					</section>
+				</section>
+		
+				<section class="section">
+					<h2 class='section-title'>References</h2>
+					<section id="references">
+						<div class="item">
+						</div>
+					</section>
+				</section>
+		</div>		
 	</body>
+	
 </html>

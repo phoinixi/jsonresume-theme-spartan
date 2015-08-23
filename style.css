@@ -44,8 +44,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 /* Custom reset */
 .main-summary p, 
 #publications .item,
@@ -60,8 +58,6 @@ table {
 /****************
 *		SMARTPHONES		
 ****************/
-
-/*	General elements	*/
 em {
 	color: #757575;
 }
@@ -88,9 +84,6 @@ div.item:last-of-type {
 	margin: 0;
 	border-bottom: none;
 	padding-bottom: 0;
-}
-#profiles div.item {
-	margin: 1em 0 0;
 }
 p {
 	text-align: justify;
@@ -177,7 +170,6 @@ section#work,
 .main-summary section {
 	padding-bottom: 2em;
 }
-
 header::after {
 	display: table;
 	content: " ";
@@ -191,6 +183,56 @@ h2.section-title {
 	padding: 1em 1.3em 0;
 	margin-bottom: 0.1275em;
 }
+.date {
+	font-weight: 700;
+	color: #757575;
+}
+.position, .area, .institution {
+	font-weight: 700;
+}
+#interests .item, #languages .item {
+	padding: 0 2em 2em 0;
+	border-bottom: none;
+}
+.website::before {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none;
+	min-width: 1.25em;
+	margin-right: 0.25em;
+	text-align: center;
+	content: '\f14c';
+}
+#profiles, #skills, #interests, #languages {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  	padding-bottom: 1em;
+}
+#profiles, #location {
+	box-shadow: none;
+	padding: 0;
+}
+#profiles .item {
+	margin: 1em 0 0;
+	padding: 0 1.8em;
+	border-bottom: none;
+}
+#interests ul {
+	margin-top: 0.5em;
+}
+#publications .name {
+	font-style: italic;
+}
 .courses li, .keywords li{
 	display: inline-block;
 	background: #f0f0f0;
@@ -202,51 +244,16 @@ h2.section-title {
 	border-right: 1px solid #ddd;
 	border-radius: 3px;
 }
-#interests ul {
-	margin-top: 0.5em;
-}
-#publications .name {
-	font-style: italic;
-}
-.date {
-	font-weight: 700;
-	color: #757575;
-}
 #publications .date {
 	font-weight: normal;
 	color: #000;	
-}
-.position, .area, .institution {
-	font-weight: 700;
-}
-#profiles, #location {
-	box-shadow: none;
-	padding: 0;
-}
-#profiles, #skills, #interests, #languages {
-	display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  padding-bottom: 1em;
-}
-#profiles .item {
-	padding: 0 1.8em;
-	border-bottom: none;
-}
-#interests .item, #languages .item {
-	padding: 0 2em 2em 0;
-	border-bottom: none;
 }
 #skills .item {
 	min-width: 15em;
 	padding: 0 2em 3em 0;
 	border-bottom: none;
 }
+
 
 /* Skills chart */
 #skills .level .bar {
@@ -284,19 +291,6 @@ h2.section-title {
 #references .item {
 	padding-left: 1em;
 	border-left: 5px solid #EB5F51;
-}
-.website::before {
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-	content: '\f14c';
 }
 
 

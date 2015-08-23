@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-digital-paper",
-  "version": "0.0.9",
-  "description": "Digital Paper theme for JSON Resume",
+  "version": "0.1.0",
+  "description": "Minimal, clean and elegant theme for JSON Resume",
   "author": "Francesco Espsoito",
   "repository": {
     "type": "git",

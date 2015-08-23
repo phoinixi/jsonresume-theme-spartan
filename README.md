@@ -6,5 +6,6 @@ This is a theme for JSON Resume. It is available via npm:
 
 [DEMO](https://themes.jsonresume.org/digital-paper)
 
-License
-Available under the MIT license.
+## License
+
+Available under the [MIT license](http://opensource.org/licenses/mit-license.php).
