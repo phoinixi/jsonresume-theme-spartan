@@ -133,11 +133,11 @@ body {
 	padding: 0 2em;
 	margin-bottom: 1em;
 }
-header div {
+#resume > header div {
 	display: table;
 	padding-left: 0.5em;
 }
-header div.middle {
+#resume > header div.middle {
 	padding-top: 2.5em;
 }
 header img {
@@ -172,6 +172,12 @@ section#basics {
 section#skills {
 	padding-bottom: 0;
 }
+section#education, 
+section#work, 
+.main-summary section {
+	padding-bottom: 2em;
+}
+
 header::after {
 	display: table;
 	content: " ";
