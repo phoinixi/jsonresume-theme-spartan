@@ -1,3 +1,7 @@
+/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,12 +45,23 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Custom reset */
+.main-summary p, 
+#publications .item,
+#skills .item,
+#languages .item,
+#references .item,
+#interests .item{
+	margin: 0;
+}
+
+
 /****************
 *		SMARTPHONES		
 ****************/
 
 /*	General elements	*/
-
 em {
 	color: #757575;
 }
@@ -57,11 +72,20 @@ blockquote {
 	margin: 0;
 	margin-bottom: 1em;
 }
-
 strong {
 	font-weight: 700;
 	font-size: 1.1em;
 }
+ul {
+	margin-top: 1em; 
+}
+div.item {
+	margin: 1em 0;
+}
+p {
+	text-align: justify;
+}
+
 
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
@@ -83,107 +107,74 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+
+/* Layout */
 body {
 	background: #f2f2f2;
 	font: 14px "Helvetica Neue" Arial, Helvetica, sans-serif;
 	line-height: 1.6;
 }
-
 #resume {
 	padding: 1em 0;
 	margin: 3em auto;
 }
-
 #header {
 	padding: 0 2em;
 	margin-bottom: 1em;
 }
-
 header .name {
 	line-height: 1;
 }
-
 header .label {
 	font-size: 1.5em;
 	font-weight: 400;
 	color: #757575;
 }
-
-section {
+section:not(.section) {
 	padding: 1em 2em;
 	border-bottom: 1px solid #757575;
-	margin: 0em 0.5em 2em;
 }
-
 section#references {
 	border-bottom:none;
 }
-
 section#basics {
 	background: inherit;
-	margin-bottom: 1em;
+	margin-bottom: 0;
 	border-top: 1px solid #757575;
 	border-bottom: 1px solid #757575;
 }
-	
-section > header > h3 {
-	float:left;
-}
-
-section > header > .date {
-	float: right;
-}
-
 section > header::after {
 	display: table;
 	content: " ";
 	clear: both;
 }
-
-.octicon {
-	font: normal normal normal 16px/1 octicons;
-	display: inline-block;
-	text-decoration: none;
-	min-width: 1.25em;
-	margin-right: 0.25em;
-	text-align: center;
-}
-
-ul {
-	margin-top: 1em; 
-}
-
-div.item {
-	margin: 1.5em 0;
-}
-
-p {
-	text-align: justify;
-}
-
 h2.section-title {
 	text-align: left;
 	font-size: 1.5em;
 	font-weight: 400;
 	color: #757575;
-	padding: 0 1.5em;
+	padding: 1em 1.3em 0;
 	margin-bottom: 0.1275em;
 }
-
+#publications .name {
+	font-style: italic;
+}
 .date {
 	font-weight: 700;
 	color: #757575;
 }
-
+#publications .date {
+	font-weight: normal;
+	color: #000;	
+}
 .position, .area, .institution {
 	font-weight: 700;
 }
-
 #profiles, #location {
 	box-shadow: none;
 	padding: 0;
 }
-
 #profiles, #skills {
 	display: -webkit-box;
   display: -moz-box;
@@ -194,13 +185,10 @@ h2.section-title {
   flex-flow: row wrap;
   justify-content: flex-start;
 }
-
 #profiles .item {
 	padding: 0 1.8em;
 }
-
-
-.keywords li{
+.courses li, .keywords li{
 	display: inline-block;
 	background: #f0f0f0;
 	font-size: 0.9em;
@@ -212,11 +200,12 @@ h2.section-title {
 	border-radius: 3px;
 }
 
+
+/* Skills chart */
 #skills .item {
 	min-width: 15em;
 	padding: 0 2em 0 0;
 }
-
 #skills .level .bar {
 	border: 1px solid #ddd;
 	display: block;
@@ -225,7 +214,6 @@ h2.section-title {
 	margin: 0em 0 1em 0;
 	position: relative;
 }
-
 #skills .level .bar::after {
 	position: absolute;
 	content: " ";
@@ -234,32 +222,26 @@ h2.section-title {
 	background: black;
 	height: 5px;
 }
-
 #skills .level.beginner .bar::after {
 	background: #EB5F51;
 	width: 2.5em;
 } 
-
 #skills .level.intermediate .bar::after {
 	background: #ffdf1f;
 	width: 5em;
 } 
-
 #skills .level.advanced .bar::after {
 	background: #59C596;
 	width: 7.5em;
 } 
-
 #skills .level.master .bar::after {
 	background: #5CB85C;
 	width: 10em;
 }
-
 #references .item {
 	padding-left: 1em;
 	border-left: 5px solid #EB5F51;
 }
-
 .website::before {
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -271,38 +253,49 @@ h2.section-title {
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
-
 	content: '\f14c';
 }
 
+
+/******************
+*		HELPER CLASSES	
+******************/
 .fa {
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
 }
 
-/******************
-*		HELPER CLASSES	
-******************/
 .clear {
 	display: table;
 	clear: both;
 }
 
+
 /****************
 *		TABLET
 ****************/
 @media screen and (min-width: 602px) { 
+	
 	#resume {
 		width: 550px;
 		margin: 0 auto;
 	}
+	section > header > h3 {
+		float:left;
+	}
+	section > header > .date {
+		float: right;
+	}
+
 }
+
 
 /****************
 *		LAPTOP	
 ****************/
 @media screen and (min-width: 1025px) { 
+	
 	#resume {
 		width: 52em;		
 		padding: 3em;
@@ -310,7 +303,6 @@ h2.section-title {
 		background: #fff;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	}
-	
 	.section {
 		display: -webkit-box;
   	display: -moz-box;
@@ -320,11 +312,10 @@ h2.section-title {
     -webkit-flex-flow: row wrap;
   	flex-flow: row wrap;
   	justify-content: space-between;
+  	border-bottom: 1px solid #757575;
   	margin-bottom: 3em;
   	margin-top: 3em;
-  	border-bottom: 1px solid #757575;
 	}
-
 	.section:last-of-type {
 		border-bottom: none;
 		margin-bottom: 0;
@@ -333,41 +324,35 @@ h2.section-title {
 		line-height: 1;
 		padding-bottom: 1em; 
 	}
-
 	h2.section-title {
 		line-height: 1.1;
+		padding-top: 0;
 	}
-	
-	section {
+	section:not(.section) {
 		width: 34.5em;
 		padding: 0;
+		padding-bottom: 2em;
 		margin-top:0;
 		border: none;
 	}
-	
 	section p {
 		margin: 0;
 	}
-
 	section#basics {
 		width: auto;
 		padding-top: 1.75em;
 		padding-left: 1.5em;
 	}
-	
 	#profiles .item{
 		padding-top: 1.75em;
 	}
-
 	div {
 		padding: 0;
 	}
-
 	#skills .item {
 		padding-left:0;
 		margin-top: 0;
 	}
-	
 	div.item {
 		margin-top: 0;
 	}
