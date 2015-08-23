@@ -20,8 +20,19 @@
 
 	{{#resume.basics}}
 		<header id="header">
-			<h1 class="name">{{name}}</h1>
-			<h2 class="label">{{label}}</h2>
+			{{#if picture}}
+				<img src="{{picture}}" alt="{{name}}"/>
+				<div class="middle">
+					<h1 class="name">{{name}}</h1>
+					<h2 class="label">{{label}}</h2>
+				</div>
+			{{else}}
+				<div>
+					<h1 class="name">{{name}}</h1>
+					<h2 class="label">{{label}}</h2>
+				</div>
+			{{/if}}
+
 		</header>
 		
 		<section id="basics">
