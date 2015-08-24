@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-digital-paper",
-  "version": "0.1.0",
+  "name": "jsonresume-theme-spartan",
+  "version": "0.1.2",
   "description": "Minimal, clean and elegant theme for JSON Resume",
   "author": "Francesco Espsoito",
   "repository": {
     "type": "git",
-    "url": "https://github.com/francescoes/jsonresume-theme-digital-paper"
+    "url": "https://github.com/francescoes/jsonresume-spartan"
   },
   "license": "MIT",
   "dependencies": {

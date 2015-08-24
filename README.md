@@ -1,10 +1,10 @@
-# Digital Paper theme for jsonresume
+# Spartan theme for jsonresume
 
 This is a theme for JSON Resume. It is available via npm:
 
-		npm install jsonresume-theme-digital-paper
+		npm install jsonresume-theme-spartan
 
-[DEMO](https://themes.jsonresume.org/digital-paper)
+[DEMO](https://themes.jsonresume.org/spartan)
 
 ## Getting started
 
