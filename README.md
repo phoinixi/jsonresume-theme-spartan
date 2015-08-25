@@ -1,32 +1,16 @@
 # Spartan theme for jsonresume
 
 This is a theme for JSON Resume. It is available via npm:
-
-		npm install jsonresume-theme-spartan
-
+```
+npm install jsonresume-theme-spartan
+```
 [DEMO](https://themes.jsonresume.org/spartan)
 
 ## Getting started
 
-To test the theme, this is what you'll need:
-
-- [node.js](http://howtonode.org/how-to-install-nodejs)
-- [npm](http://howtonode.org/introduction-to-npm)
-
-If you're on Linux, you can simply run:
-
-```
-sudo apt-get install nodejs-legacy npm
-```
-
-Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
-```
-brew install node
-```
-
 ### Install the command line
 
-We're going to use the official [resume-cli](https://github.com/jsonresume/resume-cli) to run our development server.
+The official [resume-cli](https://github.com/jsonresume/resume-cli) to run the development server.
 
 Go ahead and install it:
 
@@ -46,6 +30,24 @@ You should now see this message:
 ```
 Preview: http://localhost:4000
 Press ctrl-c to stop
+```
+
+## Contribute
+
+To test the theme, this is what you'll need:
+
+- [node.js](http://howtonode.org/how-to-install-nodejs)
+- [npm](http://howtonode.org/introduction-to-npm)
+
+If you're on Linux, you can simply run:
+
+```
+sudo apt-get install nodejs-legacy npm
+```
+
+Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
+```
+brew install node
 ```
 
 ## License
