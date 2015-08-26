@@ -1,4 +1,4 @@
-# Spartan theme for jsonresume [![0.1.5](https://badge.fury.io/gh/francescoes%2Fjsonresume-theme-spartan.svg)](http://badge.fury.io/gh/francescoes%2Fjsonresume-theme-spartan)
+# Spartan theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-spartan.svg)](http://badge.fury.io/js/jsonresume-theme-spartan)
 
 This is a theme for JSON Resume. It is available via npm:
 ```
