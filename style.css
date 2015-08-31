@@ -217,7 +217,7 @@ h2.section-title {
 	flex-flow: row wrap;
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
-  	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 #profiles, #location {
 	box-shadow: none;
@@ -380,7 +380,7 @@ h2.section-title {
 	section#basics {
 		width: auto;
 		padding-top: 1.75em;
-		padding-left: 1.5em;
+		padding-left: 1em;
 	}
 	#profiles .item{
 		padding-top: 1.75em;
