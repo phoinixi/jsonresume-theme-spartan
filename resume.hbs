@@ -89,20 +89,18 @@
 						{{#each profiles}}
 						<div class="item">
 							{{#if network}}
-							<strong class="network">
-								{{network}}
-							</strong>
+							<span class="network fa fa-{{spaceToDash network}} {{spaceToDash network}}"></span>
 							{{/if}}
 							{{#if username}}
-							<div class="username">
+							<span class="username">
 								{{#if url}}
-								<div class="url">
+								<span class="url">
 									<a href="{{url}}">{{username}}</a>
-								</div>
+								</span>
 								{{else}}
 									{{username}}
 								{{/if}}
-							</div>
+							</span>
 							{{/if}}
 						</div>
 						{{/each}}
@@ -112,7 +110,7 @@
 
 				{{#if summary}}
 				<section class="section main-summary">
-					<h2 class='section-title'>Summary</h2>
+					<h2 class='section-title'>About</h2>
 					<section>
 						<p>{{summary}}</p>
 					</section>
@@ -124,7 +122,7 @@
 
 			{{#if resume.work.length}}
 				<section class="section">
-					<h2 class='section-title'>Work</h2>
+					<h2 class='section-title'>Experience</h2>
 					<section id="work">
 					{{#each resume.work}}
 						{{#if company}}
@@ -136,12 +134,12 @@
 							<div class="date">
 								{{#if startDate}}
 								<span class="startDate">
-									{{startDate}}
+									{{MY startDate}}
 								</span>
 								{{/if}}
 								{{#if endDate}}
 								<span class="endDate">
-									- {{endDate}}
+									- {{MY endDate}}
 								</span>
 								{{else}}
 								<span class="endDate">
@@ -178,62 +176,6 @@
 					</section>
 				</section>
 			{{/if}}
-
-			{{#if resume.volunteer.length}}
-				<section class="section">
-					<h2 class='section-title'>Volunteer</h2>
-					<section id="volunteer">
-						{{#each resume.volunteer}}
-							{{#if organization}}
-								<header>
-									<h3 class="company">
-										{{organization}}
-									</h3>
-									<div class="date">
-										{{#if startDate}}
-										<span class="startDate">
-											{{startDate}}
-										</span>
-										{{/if}}
-										{{#if endDate}}
-										<span class="endDate">
-											- {{endDate}}
-										</span>
-										{{else}}
-										<span class="endDate">
-											- Present
-										</span>
-										{{/if}}
-								</header>
-							{{/if}}
-							<div class="item">
-							{{#if position}}
-							<div class="position">
-								{{position}}
-							</div>
-							{{/if}}
-							{{#if website}}
-							<div class="website">
-								<a href="{{website}}">{{website}}</a>
-							</div>
-							{{/if}}
-							{{#if summary}}
-							<div class="summary">
-								<p>{{summary}}</p>
-							</div>
-							{{/if}}
-							{{#if highlights.length}}
-							<ul class="highlights">
-								{{#each highlights}}
-								<li>{{.}}</li>
-								{{/each}}
-							</ul>
-							{{/if}}
-						</div>
-						{{/each}}
-					</section>
-				</section>
-			{{/if}}
 		
 			{{#if resume.education.length}}
 				<section class="section">
@@ -249,12 +191,12 @@
 								<div class="date">
 									{{#if startDate}}
 									<span class="startDate">
-										{{startDate}}
+										{{Y startDate}}
 									</span>
 									{{/if}}
 									{{#if endDate}}
 									<span class="endDate">
-										- {{endDate}}
+										- {{Y endDate}}
 									</span>
 									{{else}}
 									<span class="endDate">
@@ -293,6 +235,63 @@
 				</section>
 			{{/if}}
 		
+			
+			{{#if resume.volunteer.length}}
+				<section class="section">
+					<h2 class='section-title'>Volunteer</h2>
+					<section id="volunteer">
+						{{#each resume.volunteer}}
+							{{#if organization}}
+								<header>
+									<h3 class="company">
+										{{organization}}
+									</h3>
+									<div class="date">
+										{{#if startDate}}
+										<span class="startDate">
+											{{MY startDate}}
+										</span>
+										{{/if}}
+										{{#if endDate}}
+										<span class="endDate">
+											- {{MY endDate}}
+										</span>
+										{{else}}
+										<span class="endDate">
+											- Present
+										</span>
+										{{/if}}
+								</header>
+							{{/if}}
+							<div class="item">
+							{{#if position}}
+							<div class="position">
+								{{position}}
+							</div>
+							{{/if}}
+							{{#if website}}
+							<div class="website">
+								<a href="{{website}}">{{website}}</a>
+							</div>
+							{{/if}}
+							{{#if summary}}
+							<div class="summary">
+								<p>{{summary}}</p>
+							</div>
+							{{/if}}
+							{{#if highlights.length}}
+							<ul class="highlights">
+								{{#each highlights}}
+								<li>{{.}}</li>
+								{{/each}}
+							</ul>
+							{{/if}}
+						</div>
+						{{/each}}
+					</section>
+				</section>
+			{{/if}}
+
 			{{#if resume.awards.length}}
 				<section class="section">
 					<h2 class='section-title'>Awards</h2>
@@ -300,7 +299,7 @@
 					{{#each resume.awards}}
 						{{#if date}}
 						<div class="date">
-							{{date}}
+							{{DMY date}}
 						</div>
 						{{/if}}
 						<div class="item">
@@ -349,7 +348,7 @@
 								{{/if}}
 								{{#if releaseDate}}
 									<span class="date">
-										{{releaseDate}}
+										{{DMY releaseDate}}
 									</span>
 								{{/if}}
 								{{#if summary}}
