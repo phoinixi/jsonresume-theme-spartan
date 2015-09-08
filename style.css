@@ -94,13 +94,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 3em;
+	font-size: 2.5rem;
 }
-h2 {
-	font-size: 2em;
-}
+h2,
 h3 {
-	font-size: 1.275em
+	font-size: 1.275rem;
 }
 a {
 	color: #EB5F51;
@@ -110,29 +108,33 @@ a:hover {
 	text-decoration: underline;
 }
 
-
 /* Layout */
 body {
 	background: #f2f2f2;
 	line-height: 1.6;
-	font-size: 14px;
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 #resume {
 	padding: 1em 0;
 	margin: 3em auto;
 }
+
 #header {
 	padding: 0 2em;
 	margin-bottom: 1em;
 }
+
 #resume > header div {
 	display: table;
 	padding-left: 0.5em;
 }
+
 #resume > header div.middle {
 	padding-top: 2.5em;
 }
+
 header img {
 	display: block;
 	width: 10em;
@@ -140,60 +142,72 @@ header img {
 	float: right;
 	vertical-align: middle;
 }
+
 header .name {
 	line-height: 1;
 }
+
 header .label {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: 400;
 	color: #757575;
 }
+
 section:not(.section) {
 	padding: 1em 2em;
-	border-bottom: 1px solid #757575;
+	border-bottom: 1px solid #ccc;
 }
+
 section#references {
 	border-bottom:none;
 }
+
 section#basics {
 	background: inherit;
 	margin-bottom: 0;
-	border-top: 1px solid #757575;
-	border-bottom: 1px solid #757575;
-	padding-bottom: 2em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
+
 section#skills {
 	padding-bottom: 0;
 }
+
 section#education, 
 section#work, 
 .main-summary section {
 	padding-bottom: 2em;
 }
+
 header::after {
 	display: table;
 	content: " ";
 	clear: both;
 }
+
 h2.section-title {
 	text-align: left;
-	font-size: 1.5em;
+	font-size: 1.275rem;
 	font-weight: 400;
 	color: #757575;
 	padding: 1em 1.3em 0;
 	margin-bottom: 0.1275em;
 }
+
 .date {
 	font-weight: 700;
 	color: #757575;
 }
+
 .position, .area, .institution {
 	font-weight: 700;
 }
+
 #interests .item, #languages .item {
 	padding: 0 2em 2em 0;
 	border-bottom: none;
 }
+
 .website::before {
 	display: inline-block;
 	font: normal normal normal 14px/1 FontAwesome;
@@ -207,6 +221,7 @@ h2.section-title {
 	text-align: center;
 	content: '\f14c';
 }
+
 #profiles, #skills, #interests, #languages {
 	display: -webkit-box;
 	display: -moz-box;
@@ -217,23 +232,29 @@ h2.section-title {
 	flex-flow: row wrap;
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
-  	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
+
 #profiles, #location {
 	box-shadow: none;
 	padding: 0;
 }
+
 #profiles .item {
-	margin: 1em 0 0;
-	padding: 0 1.8em;
+	margin: 0;
+	padding: 0;
+	padding-right: 1.8em;
 	border-bottom: none;
 }
+
 #interests ul {
 	margin-top: 0.5em;
 }
+
 #publications .name {
 	font-style: italic;
 }
+
 .courses li, .keywords li{
 	display: inline-block;
 	background: #f0f0f0;
@@ -245,10 +266,12 @@ h2.section-title {
 	border-right: 1px solid #ddd;
 	border-radius: 3px;
 }
+
 #publications .date {
 	font-weight: normal;
 	color: #000;	
 }
+
 #skills .item {
 	min-width: 15em;
 	padding: 0 2em 3em 0;
@@ -265,6 +288,7 @@ h2.section-title {
 	margin: 0em 0 1em 0;
 	position: relative;
 }
+
 #skills .level .bar::after {
 	position: absolute;
 	content: " ";
@@ -273,27 +297,107 @@ h2.section-title {
 	background: black;
 	height: 5px;
 }
+
 #skills .level.beginner .bar::after {
 	background: #EB5F51;
 	width: 2.5em;
 } 
+
 #skills .level.intermediate .bar::after {
 	background: #ffdf1f;
 	width: 5em;
 } 
+
 #skills .level.advanced .bar::after {
 	background: #59C596;
 	width: 7.5em;
 } 
+
 #skills .level.master .bar::after {
 	background: #5CB85C;
 	width: 10em;
 }
+
 #references .item {
 	padding-left: 1em;
 	border-left: 5px solid #EB5F51;
 }
 
+.fa.social {
+	margin-right: 0.25em;
+	font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+.google-plus {
+	color: #dd4b39;	
+}
+
+.tumblr {
+	color:#32506d;
+}
+
+.foursquare {
+	color:  #0072b1;
+}
+
+.facebook {
+	color: #3b5998;
+}
+
+.linkedin {
+	color: #007bb6;
+}
+
+.pinterest {
+	color: #cb2027;
+}
+
+.dribbble {
+	color: #ea4c89;
+}
+
+.instagram {
+	color: #517fa4;
+}
+
+.twitter {
+	color: #00aced;
+}
+
+.soundcloud { 
+	color: #ff3a00;
+}
+
+.wordpress {
+	color: #21759b;
+}
+
+.youtube {
+	color: #bb0000;
+}
+
+.github {
+	color: #171515;
+}
+
+.stack-overflow {
+	color: #828386;
+	position: relative;
+}
+
+.flickr {
+	color: #ff0084;
+}      
+
+.stack-overflow::after {
+	position: absolute;
+	left: 0;
+	content: '\f16c';
+	color: #f68a1f;
+	overflow: hidden;
+	height: 40%;
+}
 
 /******************
 *		HELPER CLASSES	
@@ -336,7 +440,7 @@ h2.section-title {
 @media screen and (min-width: 1025px) { 
 	
 	#resume {
-		width: 52em;		
+		width: 650px;		
 		padding: 3em;
 		margin: 3em auto;
 		background: #fff;
@@ -352,7 +456,7 @@ h2.section-title {
 		flex-flow: row wrap;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
-		border-bottom: 1px solid #757575;
+		border-bottom: 1px inset #ccc;
 		margin-bottom: 3em;
 		margin-top: 3em;
 	}
@@ -380,7 +484,7 @@ h2.section-title {
 	section#basics {
 		width: auto;
 		padding-top: 1.75em;
-		padding-left: 1.5em;
+		padding-left: 1em;
 	}
 	#profiles .item{
 		padding-top: 1.75em;
