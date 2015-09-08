@@ -76,7 +76,6 @@ ul {
 }
 div.item {
 	margin: 1em 0 2em;
-	border-bottom: 1px solid #eee;
 	padding-bottom: 2em;
 }
 div.item:last-of-type {
@@ -98,7 +97,7 @@ h1 {
 }
 h2,
 h3 {
-	font-size: 1.275rem;
+	font-size: 1rem;
 }
 a {
 	color: #EB5F51;
@@ -117,12 +116,12 @@ body {
 }
 
 #resume {
-	padding: 1em 0;
-	margin: 3em auto;
+	padding: 1rem 0;
+	margin: 1rem auto;
 }
 
 #header {
-	padding: 0 2em;
+	padding: 0 1em;
 	margin-bottom: 1em;
 }
 
@@ -132,7 +131,7 @@ body {
 }
 
 #resume > header div.middle {
-	padding-top: 2.5em;
+	padding-top: 1.5em;
 }
 
 header img {
@@ -154,8 +153,7 @@ header .label {
 }
 
 section:not(.section) {
-	padding: 1em 2em;
-	border-bottom: 1px solid #ccc;
+	padding: .5em 1rem;
 }
 
 section#references {
@@ -165,8 +163,6 @@ section#references {
 section#basics {
 	background: inherit;
 	margin-bottom: 0;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 }
 
 section#skills {
@@ -176,7 +172,7 @@ section#skills {
 section#education, 
 section#work, 
 .main-summary section {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 header::after {
@@ -187,10 +183,10 @@ header::after {
 
 h2.section-title {
 	text-align: left;
-	font-size: 1.275rem;
+	font-size: 1rem;
 	font-weight: 400;
 	color: #757575;
-	padding: 1em 1.3em 0;
+	padding: 1em 1rem 0;
 	margin-bottom: 0.1275em;
 }
 
@@ -204,7 +200,7 @@ h2.section-title {
 }
 
 #interests .item, #languages .item {
-	padding: 0 2em 2em 0;
+	padding: 0 1em 1em 0;
 	border-bottom: none;
 }
 
@@ -243,7 +239,7 @@ h2.section-title {
 #profiles .item {
 	margin: 0;
 	padding: 0;
-	padding-right: 1.8em;
+	padding-right: 1em;
 	border-bottom: none;
 }
 
@@ -274,7 +270,7 @@ h2.section-title {
 
 #skills .item {
 	min-width: 15em;
-	padding: 0 2em 3em 0;
+	padding: 0 .5em .8em 0;
 	border-bottom: none;
 }
 
@@ -446,6 +442,7 @@ h2.section-title {
 		background: #fff;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 	}
+
 	.section {
 		display: -webkit-box;
 		display: -moz-box;
@@ -456,48 +453,62 @@ h2.section-title {
 		flex-flow: row wrap;
 		-webkit-justify-content: space-between;
 		justify-content: space-between;
-		border-bottom: 1px inset #ccc;
-		margin-bottom: 3em;
-		margin-top: 3em;
+		margin-bottom: 1em;
+		margin-top: 1em;
+		border-bottom: 1px solid #eee;
 	}
+
 	.section:last-of-type {
 		border-bottom: none;
 		margin-bottom: 0;
 	}
+
 	section > header {
 		line-height: 1;
 		padding-bottom: 1em; 
 	}
+
 	h2.section-title {
 		line-height: 1.1;
 		padding-top: 0;
 	}
+
 	section:not(.section) {
 		width: 34.5em;
-		padding: 0 1.3em 3em 0;
+		padding: 0 1em 1em 0;
 		margin-top:0;
 		border: none;
 	}
+
 	section p {
 		margin: 0;
 	}
+
 	section#basics {
 		width: auto;
-		padding-top: 1.75em;
+		padding-top: 1em;
 		padding-left: 1em;
+		padding-bottom: 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
 	}
+
 	#profiles .item{
-		padding-top: 1.75em;
+		padding-bottom: 1em;
 	}
+
 	div {
 		padding: 0;
 	}
+
 	#skills .item {
 		padding-left:0;
 		margin-top: 0;
 	}
+
 	div.item {
 		margin-top: 0;
+		border-bottom: 1px solid #eee;
 	}
 
 }
