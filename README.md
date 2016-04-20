@@ -32,6 +32,14 @@ Preview: http://localhost:4000
 Press ctrl-c to stop
 ```
 
+### Social Profiles Icons
+
+**Profiles supported with brand colors:**
+
+github, stack overflow, linkedin, dribbble, twitter, facebook, pinterest, instagram, soundcloud, wordpress, youtube, flickr, google plus, tumblr, foursquare.
+
+To have a social icon close the social link profile (or username) it is enough to set a `network` the name of the Social Network (es: 'Stack Overflow').
+
 ## Contribute
 
 To test the theme, this is what you'll need:
