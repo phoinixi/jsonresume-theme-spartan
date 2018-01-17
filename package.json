@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.0.11",
-    "moment": "^2.20.1"
+    "handlebars": ">=4.0.11",
+    "moment": ">=2.20.1"
   }
 }
