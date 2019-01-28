@@ -4,7 +4,7 @@ This is a theme for JSON Resume. It is available via npm:
 ```
 npm install jsonresume-theme-spartan
 ```
-[DEMO](https://themes.jsonresume.org/spartan)
+[DEMO](https://phoinixi.github.io/website/resume/spartan)
 
 ## Getting started
 
