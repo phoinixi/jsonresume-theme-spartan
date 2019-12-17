@@ -15,9 +15,7 @@
 			<header id="header">
 
 				{{#if picture}}
-					<div class="image-crop">
-						<img src="{{picture}}" alt="{{name}}" />
-					</div>
+					<img src="{{picture}}" alt="{{name}}" />
 
 					<div class="middle">
 						<h1 class="name">{{name}}</h1>
@@ -72,7 +70,7 @@
 				<div id="contact">
 					{{#if website}}
 						<div class="website">
-							<a href="{{website}}">{{website}}</a>
+							<a href="{{website}}" target="_blank">{{website}}</a>
 						</div>
 					{{/if}}
 
@@ -107,7 +105,7 @@
 
 										{{#if url}}
 											<span class="url">
-												<a href="{{url}}">{{username}}</a>
+												<a href="{{url}}" target="_blank">{{username}}</a>
 											</span>
 
 										{{else}}
@@ -165,10 +163,15 @@
 								{{/if}}
 
 								{{#if endDate}}
-									<span class="endDate">
-										- {{MY endDate}}
-									</span>
-
+									{{#if present}}
+										<span class="endDate">
+											- Present
+										</span>
+									{{else}}
+										<span class="endDate">
+											- {{MY endDate}}
+										</span>
+									{{/if}}
 								{{else}}
 									<span class="endDate">
 										- Present
@@ -230,9 +233,15 @@
 									</span>
 								{{/if}}
 								{{#if endDate}}
-									<span class="endDate">
-										- {{Y endDate}}
-									</span>
+									{{#if present}}
+										<span class="endDate">
+											- Present
+										</span>
+									{{else}}
+										<span class="endDate">
+											- {{Y endDate}}
+										</span>
+									{{/if}}
 								{{else}}
 									<span class="endDate">
 										- Present

@@ -89,6 +89,7 @@ video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -102,17 +103,21 @@ nav,
 section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol,
 ul {
 	list-style: none;
 }
+
 blockquote,
 q {
 	quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -120,10 +125,12 @@ q:after {
 	content: "";
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* Custom reset */
 .main-summary p,
 #publications .item,
@@ -140,29 +147,36 @@ table {
 em {
 	color: #757575;
 }
+
 p {
 	margin: 1em 0;
 }
+
 blockquote {
 	margin: 0;
 	margin-bottom: 1em;
 }
+
 strong {
 	font-weight: 700;
 	font-size: 1.1em;
 }
+
 ul {
 	margin-top: 0.5em;
 }
+
 div.item {
 	margin: 1em 0 2em;
 	padding-bottom: 2em;
 }
+
 div.item:last-of-type {
 	margin: 0;
 	border-bottom: none;
 	padding-bottom: 0;
 }
+
 p {
 	text-align: justify;
 }
@@ -176,17 +190,21 @@ h5,
 h6 {
 	font-weight: 700;
 }
+
 h1 {
 	font-size: 2.5rem;
 }
+
 h2,
 h3 {
 	font-size: 1rem;
 }
+
 a {
 	color: #eb5f51;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }
@@ -220,18 +238,10 @@ body {
 
 header img {
 	display: block;
-	margin-left: -15%;
-	height: 100%;
-	width: auto;
-}
-
-/* from https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3 */
-.image-crop {
-	width: 8em;
-	height: 8em;
-	overflow: hidden;
-	border-radius: 50%;
+	width: 10em;
+	border-radius: 0.275em;
 	float: right;
+	vertical-align: middle;
 }
 
 header .name {
