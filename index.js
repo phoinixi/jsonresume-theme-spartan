@@ -73,14 +73,25 @@ var humanReadableDuration = seconds => {
 		}
 		return "";
 	};
+
 	var numYears = Math.floor(seconds / 31536000);
 	var numDays = Math.floor((seconds % 31536000) / 86400);
-	var numMonths = Math.ceil(numDays / 30);
+	var numMonths = Math.ceil(numDays / 31);
+	var yearOutput = formatUnit(numYears, "Year");
 
-	return formatUnit(numYears, "Year") + (numMonths > 0 ? ", " + formatUnit(numMonths, "Month"): "");
+	if (yearOutput.length == 0) {
+		return formatUnit(numMonths, "Month");
+	} else {
+		return (
+			yearOutput + (numMonths > 0 ? ", " + formatUnit(numMonths, "Month") : "")
+		);
+	}
 };
 
-Handlebars.registerHelper("periodToNow", function(date) {
-	var duration = moment.duration(moment(moment.now()).diff(date.toString()));
+Handlebars.registerHelper("periodToNow", function(startDate, endDate, present) {
+	if (present == true) endDate = moment.now();
+	var duration = moment.duration(
+		moment(moment(endDate)).diff(startDate.toString())
+	);
 	return humanReadableDuration(duration.asSeconds());
 });
