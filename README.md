@@ -1,9 +1,11 @@
 # Spartan theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-spartan.svg)](http://badge.fury.io/js/jsonresume-theme-spartan)
 
 This is a theme for JSON Resume. It is available via npm:
+
 ```
 npm install jsonresume-theme-spartan
 ```
+
 [DEMO](https://phoinixi.github.io/website/resume/spartan)
 
 ## Getting started
@@ -17,6 +19,7 @@ Go ahead and install it:
 ```
 sudo npm install -g resume-cli
 ```
+
 ### Serve theme
 
 While inside the theme folder, simply run:
@@ -54,6 +57,7 @@ sudo apt-get install nodejs-legacy npm
 ```
 
 Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
+
 ```
 brew install node
 ```

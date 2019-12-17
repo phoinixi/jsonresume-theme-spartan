@@ -1,17 +1,19 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
 var moment = require("moment");
+var lookup = require("country-code-lookup");
 
-function render(resume) {
+var render = resume => {
 	var main_css = fs.readFileSync(__dirname + "/styles/main.css", "utf-8");
 	var comp_css = fs.readFileSync(__dirname + "/styles/components.css", "utf-8");
+	var combined_css = main_css + comp_css;
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
 
 	return Handlebars.compile(tpl)({
-		css: main_css + comp_css,
+		css: combined_css,
 		resume: resume
 	});
-}
+};
 
 module.exports = {
 	render: render
@@ -39,6 +41,16 @@ Handlebars.registerHelper("spaceToDash", function(str) {
 	return str.replace(/\s/g, "-").toLowerCase();
 });
 
+Handlebars.registerHelper("toCountryFull", function(countryCode) {
+	var result = lookup.byIso(countryCode);
+
+	if (result.country != undefined) {
+		return result.country;
+	}
+
+	return countryCode;
+});
+
 Handlebars.registerHelper("MY", function(date) {
 	var d = date.toString();
 	return moment(d).format("MMMM YYYY");
@@ -52,4 +64,23 @@ Handlebars.registerHelper("Y", function(date) {
 Handlebars.registerHelper("DMY", function(date) {
 	var d = date.toString();
 	return moment(d).format("D MMMM YYYY");
+});
+
+var humanReadableDuration = seconds => {
+	var formatUnit = (num, unit) => {
+		if (num > 0) {
+			return `${num} ${num > 1 ? unit + "s" : unit}`;
+		}
+		return "";
+	};
+	var numYears = Math.floor(seconds / 31536000);
+	var numDays = Math.floor((seconds % 31536000) / 86400);
+	var numMonths = Math.ceil(numDays / 30);
+
+	return formatUnit(numYears, "Year") + (numMonths > 0 ? ", " + formatUnit(numMonths, "Month"): "");
+};
+
+Handlebars.registerHelper("periodToNow", function(date) {
+	var duration = moment.duration(moment(moment.now()).diff(date.toString()));
+	return humanReadableDuration(duration.asSeconds());
 });

@@ -2,41 +2,122 @@
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
 	content: none;
 }
 table {
@@ -49,10 +130,9 @@ table {
 #skills .item,
 #languages .item,
 #references .item,
-#interests .item{
+#interests .item {
 	margin: 0;
 }
-
 
 /****************
 *		SMARTPHONES
@@ -72,7 +152,7 @@ strong {
 	font-size: 1.1em;
 }
 ul {
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 div.item {
 	margin: 1em 0 2em;
@@ -87,9 +167,13 @@ p {
 	text-align: justify;
 }
 
-
 /* Headers */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-weight: 700;
 }
 h1 {
@@ -100,7 +184,7 @@ h3 {
 	font-size: 1rem;
 }
 a {
-	color: #EB5F51;
+	color: #eb5f51;
 	text-decoration: none;
 }
 a:hover {
@@ -136,10 +220,18 @@ body {
 
 header img {
 	display: block;
-	width: 10em;
-	border-radius: 0.275em;
+	margin-left: -15%;
+	height: 100%;
+	width: auto;
+}
+
+/* from https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3 */
+.image-crop {
+	width: 8em;
+	height: 8em;
+	overflow: hidden;
+	border-radius: 50%;
 	float: right;
-	vertical-align: middle;
 }
 
 header .name {
@@ -153,11 +245,11 @@ header .label {
 }
 
 section:not(.section) {
-	padding: .5em 1rem;
+	padding: 0.5em 1rem;
 }
 
 section#references {
-	border-bottom:none;
+	border-bottom: none;
 }
 
 section#basics {
@@ -195,11 +287,14 @@ h2.section-title {
 	color: #757575;
 }
 
-.position, .area, .institution {
+.position,
+.area,
+.institution {
 	font-weight: 700;
 }
 
-#interests .item, #languages .item {
+#interests .item,
+#languages .item {
 	padding: 0 1em 1em 0;
 	border-bottom: none;
 }
@@ -215,10 +310,13 @@ h2.section-title {
 	min-width: 1.25em;
 	margin-right: 0.25em;
 	text-align: center;
-	content: '\f14c';
+	content: "\f14c";
 }
 
-#profiles, #skills, #interests, #languages {
+#profiles,
+#skills,
+#interests,
+#languages {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -228,10 +326,11 @@ h2.section-title {
 	flex-flow: row wrap;
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
-  padding-bottom: 1em;
+	padding-bottom: 1em;
 }
 
-#profiles, #location {
+#profiles,
+#location {
 	box-shadow: none;
 	padding: 0;
 }
@@ -251,7 +350,8 @@ h2.section-title {
 	font-style: italic;
 }
 
-.courses li, .keywords li{
+.courses li,
+.keywords li {
 	display: inline-block;
 	background: #f0f0f0;
 	font-size: 0.9em;
@@ -270,10 +370,9 @@ h2.section-title {
 
 #skills .item {
 	min-width: 15em;
-	padding: 0 .5em .8em 0;
+	padding: 0 0.5em 0.8em 0;
 	border-bottom: none;
 }
-
 
 /* Skills chart */
 #skills .level .bar {
@@ -295,7 +394,7 @@ h2.section-title {
 }
 
 #skills .level.beginner .bar::after {
-	background: #EB5F51;
+	background: #eb5f51;
 	width: 2.5em;
 }
 
@@ -305,18 +404,18 @@ h2.section-title {
 }
 
 #skills .level.advanced .bar::after {
-	background: #59C596;
+	background: #59c596;
 	width: 7.5em;
 }
 
 #skills .level.master .bar::after {
-	background: #5CB85C;
+	background: #5cb85c;
 	width: 10em;
 }
 
 #references .item {
 	padding-left: 1em;
-	border-left: 5px solid #EB5F51;
+	border-left: 5px solid #eb5f51;
 }
 
 .fa.social {
@@ -330,11 +429,11 @@ h2.section-title {
 }
 
 .tumblr {
-	color:#32506d;
+	color: #32506d;
 }
 
 .foursquare {
-	color:  #0072b1;
+	color: #0072b1;
 }
 
 .facebook {
@@ -389,10 +488,14 @@ h2.section-title {
 .stack-overflow::after {
 	position: absolute;
 	left: 0;
-	content: '\f16c';
+	content: "\f16c";
 	color: #f68a1f;
 	overflow: hidden;
 	height: 40%;
+}
+
+.duration {
+	font-size: 12px;
 }
 
 /******************
@@ -409,32 +512,37 @@ h2.section-title {
 	clear: both;
 }
 
-
 /****************
 *		TABLET
 ****************/
 @media screen and (min-width: 602px) {
-
 	#resume {
 		width: 550px;
 		margin: 0 auto;
 	}
-	section > header > h3 {
-		float:left;
+	section > header > div {
+		float: left;
 	}
+
+	section > header > h3 {
+		float: left;
+	}
+
 	section > header > .date {
 		float: right;
 		line-height: 1.3;
 	}
 
+	.duration {
+		font-size: 12px;
+		float: right;
+	}
 }
-
 
 /****************
 *		LAPTOP
 ****************/
 @media screen and (min-width: 1025px) {
-
 	#resume {
 		width: 650px;
 		padding: 3em;
@@ -476,7 +584,7 @@ h2.section-title {
 	section:not(.section) {
 		width: 34.5em;
 		padding: 0 1em 1em 0;
-		margin-top:0;
+		margin-top: 0;
 		border: none;
 	}
 
@@ -493,7 +601,7 @@ h2.section-title {
 		border-bottom: 1px solid #eee;
 	}
 
-	#profiles .item{
+	#profiles .item {
 		padding-bottom: 1em;
 	}
 
@@ -502,7 +610,7 @@ h2.section-title {
 	}
 
 	#skills .item {
-		padding-left:0;
+		padding-left: 0;
 		margin-top: 0;
 	}
 
@@ -510,5 +618,4 @@ h2.section-title {
 		margin-top: 0;
 		border-bottom: 1px solid #eee;
 	}
-
 }

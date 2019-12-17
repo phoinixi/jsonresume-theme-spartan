@@ -2,3 +2,15 @@
 	padding-left: 20px;
   list-style-type: circle;
 }
+
+.position {
+  font-size: 12px;
+}
+
+.summary-content p {
+  margin-bottom: 10px;
+}
+
+.summary-content p:last-child {
+  margin-bottom: 0;
+}
