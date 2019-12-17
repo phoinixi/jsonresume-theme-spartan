@@ -1,11 +1,11 @@
 {
-	"name": "jsonresume-theme-spartan-extended",
+	"name": "@aaron-k-t-berry/jsonresume-theme-spartan-extended",
 	"version": "0.2.1",
-	"description": "Minimal, clean and elegant theme for JSON Resume",
-	"author": "Francesco Esposito <fraesps@gmail.com>",
+	"description": "Extended version of the spartan them to a extended JSON resume format",
+	"author": "Aaron Berry <aaron.abm@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/francescoes/jsonresume-theme-spartan"
+		"url": "git+https://github.com/Aaron-K-T-Berry/jsonresume-theme-spartan.git"
 	},
 	"license": "MIT",
 	"dependencies": {
@@ -17,6 +17,6 @@
 		"resume-cli": "^1.2.7"
 	},
 	"scripts": {
-		"start": "./node_modules/.bin/resume serve"
+		"start": "resume serve"
 	}
 }
