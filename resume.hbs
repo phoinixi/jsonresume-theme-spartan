@@ -140,6 +140,7 @@
 
 					{{#each resume.work}}
 						<header>
+
 							{{#if company}}
 								<div>
 									<h3 class="name">
@@ -152,7 +153,6 @@
 										</div>
 									{{/if}}
 								</div>
-
 							{{/if}}
 
 							<div class="date">
@@ -172,6 +172,7 @@
 											- {{MY endDate}}
 										</span>
 									{{/if}}
+
 								{{else}}
 									<span class="endDate">
 										- Present
@@ -219,19 +220,23 @@
 			<section class="section">
 				<h2 class='section-title'>Education</h2>
 				<section id="education">
+
 					{{#each resume.education}}
 						<header>
+
 							{{#if institution}}
 								<h3 class="institution">
 									{{institution}}
 								</h3>
 							{{/if}}
+
 							<div class="date">
 								{{#if startDate}}
 									<span class="startDate">
 										{{Y startDate}}
 									</span>
 								{{/if}}
+
 								{{#if endDate}}
 									{{#if present}}
 										<span class="endDate">
@@ -242,62 +247,74 @@
 											- {{Y endDate}}
 										</span>
 									{{/if}}
+
 								{{else}}
 									<span class="endDate">
 										- Present
 									</span>
 								{{/if}}
 							</div>
-
 						</header>
+
 						<div class="item">
 							{{#if studyType}}
 								<div class="studyType">
 									<em>{{studyType}}</em>
 								</div>
 							{{/if}}
+
 							{{#if area}}
 								<div class="area">
 									{{area}}
 								</div>
 							{{/if}}
+
 							{{#if gpa}}
 								<div>
 									<span class="fa fa-graduation-cap"></span>
 									<span class='gpa'> GPA: {{gpa}}</span>
 								</div>
 							{{/if}}
+
 							{{#if summary}}
 								<p>{{summary}}</p>
 							{{/if}}
+
 							{{#if courses.length}}
 								<ul class="courses">
+
 									{{#each courses}}
 										<li>{{.}}</li>
 									{{/each}}
+
 								</ul>
 							{{/if}}
 						</div>
 					{{/each}}
 				</section>
+
 			</section>
 		{{/if}}
+
 		{{#if resume.volunteer.length}}
 			<section class="section">
 				<h2 class='section-title'>Volunteer</h2>
 				<section id="volunteer">
+
 					{{#each resume.volunteer}}
 						{{#if organization}}
 							<header>
 								<h3 class="company">
 									{{organization}}
 								</h3>
+
 								<div class="date">
 									{{#if startDate}}
 										<span class="startDate">
 											{{MY startDate}}
 										</span>
 									{{/if}}
+
 									{{#if endDate}}
 										<span class="endDate">
 											- {{MY endDate}}
@@ -307,24 +324,29 @@
 											- Present
 										</span>
 									{{/if}}
+
 							</header>
 						{{/if}}
+
 						<div class="item">
 							{{#if position}}
 								<div class="position">
 									{{position}}
 								</div>
 							{{/if}}
+
 							{{#if website}}
 								<div class="website">
 									<a href="{{website}}">{{website}}</a>
 								</div>
 							{{/if}}
+
 							{{#if summary}}
 								<div class="summary">
 									<p>{{summary}}</p>
 								</div>
 							{{/if}}
+
 							{{#if highlights.length}}
 								<ul class="highlights">
 									{{#each highlights}}
@@ -332,32 +354,38 @@
 									{{/each}}
 								</ul>
 							{{/if}}
+
 						</div>
 					{{/each}}
 				</section>
 			</section>
 		{{/if}}
+
 		{{#if resume.awards.length}}
 			<section class="section">
 				<h2 class='section-title'>Awards</h2>
 				<section id="awards">
+
 					{{#each resume.awards}}
 						{{#if date}}
 							<div class="date">
 								{{DMY date}}
 							</div>
 						{{/if}}
+
 						<div class="item">
 							{{#if title}}
 								<div class="title">
 									{{title}}
 								</div>
 							{{/if}}
+
 							{{#if awarder}}
 								<div class="awarder">
 									{{awarder}}
 								</div>
 							{{/if}}
+
 							{{#if summary}}
 								<div class="summary">
 									<p>{{summary}}</p>
@@ -368,14 +396,18 @@
 				</section>
 			</section>
 		{{/if}}
+
 		{{#if resume.publications.length}}
 			<section class="section">
 				<h2 class='section-title'>Publications</h2>
 				<section id="publications">
+
 					{{#each resume.publications}}
 						<div class="item">
+
 							{{#if name}}
 								<span class="name">
+
 									{{#if website}}
 										<span class="website">
 											<a href="{{website}}">{{name}}</a>
@@ -385,16 +417,19 @@
 									{{/if}}
 								</span>
 							{{/if}}
+
 							{{#if publisher}}
 								<span class="publisher">
 									in {{publisher}},
 								</span>
 							{{/if}}
+
 							{{#if releaseDate}}
 								<span class="date">
 									{{DMY releaseDate}}
 								</span>
 							{{/if}}
+
 							{{#if summary}}
 								<div class="summary">
 									<p>{{summary}}</p>
@@ -405,36 +440,44 @@
 				</section>
 			</section>
 		{{/if}}
-		{{#if resume.skills.length}}
 
+		{{#if resume.skills.length}}
 			<section class="section">
 				<h2 class='section-title'>Skills</h2>
 				<section id="skills">
+
 					{{#each resume.skills}}
 						<div class="item">
+
 							{{#if name}}
 								<div class="name">
 									{{name}}
 								</div>
 							{{/if}}
+
 							{{#if level}}
 								<div class="level {{toLowerCase level}}">
 									<em>{{level}}</em>
+
 									{{#if summary}}
 										<p>{{summary}}</p>
 									{{/if}}
 								</div>
 							{{/if}}
+
 							{{#if keywords.length}}
 								<ul class="keywords">
+
 									{{#each keywords}}
 										<li>{{.}}</li>
 									{{/each}}
+
 								</ul>
 							{{/if}}
 						</div>
 					{{/each}}
 				</section>
+
 			</section>
 		{{/if}}
 
@@ -442,21 +485,26 @@
 			<section class="section">
 				<h2 class='section-title'>Languages</h2>
 				<section id="languages">
+
 					{{#each resume.languages}}
 						<div class="item">
+
 							{{#if language}}
 								<div class="language">
 									{{language}}
 								</div>
 							{{/if}}
+
 							{{#if fluency}}
 								<div class="fluency">
 									<em>{{fluency}}</em>
 								</div>
 							{{/if}}
+
 						</div>
 					{{/each}}
 				</section>
+
 			</section>
 		{{/if}}
 
@@ -464,23 +512,30 @@
 			<section class="section">
 				<h2 class='section-title' class='section-title'>Interests</h2>
 				<section id="interests">
+
 					{{#each resume.interests}}
 						<div class="item">
+
 							{{#if name}}
 								<div class="name">
 									{{name}}
 								</div>
 							{{/if}}
+
 							{{#if keywords.length}}
 								<ul class="keywords">
+
 									{{#each keywords}}
 										<li>{{.}}</li>
 									{{/each}}
+
 								</ul>
 							{{/if}}
+
 						</div>
 					{{/each}}
 				</section>
+
 			</section>
 		{{/if}}
 
@@ -488,6 +543,7 @@
 			<section class="section">
 				<h2 class='section-title'>References</h2>
 				<section id="references">
+
 					{{#each resume.references}}
 						<div class="item">
 							{{#if reference}}
@@ -495,14 +551,17 @@
 									&#8220;&#32;{{reference}}&#32;&#8221;
 								</blockquote>
 							{{/if}}
+
 							{{#if name}}
 								<div class="name">
 									{{name}}
 								</div>
 							{{/if}}
+
 						</div>
 					{{/each}}
 				</section>
+
 			</section>
 		{{/if}}
 	</div>
