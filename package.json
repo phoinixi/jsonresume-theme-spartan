@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-spartan",
+  "name": "jsonresume-theme-spartan-extended",
   "version": "0.2.1",
   "description": "Minimal, clean and elegant theme for JSON Resume",
   "author": "Francesco Esposito <fraesps@gmail.com>",
@@ -11,5 +11,11 @@
   "dependencies": {
     "handlebars": ">=4.0.11",
     "moment": ">=2.20.1"
+  },
+  "devDependencies": {
+    "resume-cli": "^1.2.7"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/resume serve"
   }
 }
