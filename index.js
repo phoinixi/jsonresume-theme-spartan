@@ -4,13 +4,11 @@ var moment = require("moment");
 var lookup = require("country-code-lookup");
 
 var render = resume => {
-	var main_css = fs.readFileSync(__dirname + "/styles/main.css", "utf-8");
-	var comp_css = fs.readFileSync(__dirname + "/styles/components.css", "utf-8");
-	var combined_css = main_css + comp_css;
+	var main_css = fs.readFileSync(__dirname + "/main.css", "utf-8");
 	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
 
 	return Handlebars.compile(tpl)({
-		css: combined_css,
+		css: main_css,
 		resume: resume
 	});
 };
