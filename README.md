@@ -1,8 +1,32 @@
-# Spartan theme for jsonresume [![npm version](https://badge.fury.io/js/jsonresume-theme-spartan.svg)](http://badge.fury.io/js/jsonresume-theme-spartan)
+# Spartan theme for jsonresume [![npm version](https://badge.fury.io/js/%40aaron-k-t-berry%2Fjsonresume-theme-spartan-extended.svg)](https://badge.fury.io/js/%40aaron-k-t-berry%2Fjsonresume-theme-spartan-extended)
 
+This is my extended version of the json resume theme spartan. There was a couple things I didn't like about the original theme and wanted it to support some custom fields in the resume too.
+
+Things i changed:
+
+- Contact details
+  - Made address format better for australian addresses
+  - Made country code automatically resolve to long country name
+- About
+  - Fixed up some paragraph separation issues with new lines
+  - Updated some styling
+- Experience
+
+  - Updated the formating of Job tittles and employment dates
+  - Updated handling of current job status to display "Present"
+  - Automatic calculation of employment length
+  - Styling for employment highlights
+
+- Education
+  - Im proved handling of present education
+
+- Skills
+  - Added optional summary line for skill
+
+<!--
 This is a theme for JSON Resume. It is available via npm:
 
-```
+```bash
 npm install jsonresume-theme-spartan
 ```
 
@@ -16,7 +40,7 @@ The official [resume-cli](https://github.com/jsonresume/resume-cli) to run the d
 
 Go ahead and install it:
 
-```
+```bash
 sudo npm install -g resume-cli
 ```
 
@@ -24,13 +48,13 @@ sudo npm install -g resume-cli
 
 While inside the theme folder, simply run:
 
-```
+```bash
 resume serve
 ```
 
 You should now see this message:
 
-```
+```bash
 Preview: http://localhost:4000
 Press ctrl-c to stop
 ```
@@ -52,16 +76,16 @@ To test the theme, this is what you'll need:
 
 If you're on Linux, you can simply run:
 
-```
+```bash
 sudo apt-get install nodejs-legacy npm
 ```
 
 Or if you're on OSX and got [Homebrew](http://brew.sh/) installed:
 
-```
+```bash
 brew install node
 ```
 
 ## License
 
-Available under the [MIT license](http://opensource.org/licenses/mit-license.php).
+Available under the [MIT license](http://opensource.org/licenses/mit-license.php). -->
