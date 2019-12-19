@@ -43,8 +43,9 @@
 
 						{{#if city}}
 							<span class="city">
-								{{city}},
+								{{city}}
 							</span>
+							|
 						{{/if}}
 
 						{{#if region}}
@@ -55,11 +56,12 @@
 
 						{{#if postalCode}}
 							<span class="postalCode">
-								{{postalCode}},
+								{{postalCode}}
 							</span>
 						{{/if}}
 
 						{{#if countryCode}}
+							|
 							<span class="countryCode">
 								{{toCountryFull countryCode}}
 							</span>

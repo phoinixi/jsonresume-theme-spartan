@@ -177,10 +177,6 @@ div.item:last-of-type {
 	padding-bottom: 0;
 }
 
-p {
-	text-align: justify;
-}
-
 /* Headers */
 h1,
 h2,
