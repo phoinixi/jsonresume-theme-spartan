@@ -29,9 +29,7 @@
 		"semantic-release": "semantic-release"
 	},
 	"husky": {
-		"hooks": {
-			"prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-		}
+		"hooks": {}
 	},
 	"config": {
 		"commitizen": {
