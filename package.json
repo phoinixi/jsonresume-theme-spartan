@@ -1,6 +1,6 @@
 {
 	"name": "jsonresume-theme-spartan-extended",
-	"version": "0.0.0-development",
+	"version": "0.4.0",
 	"description": "Extended version of the spartan them to a extended JSON resume format",
 	"author": "Aaron Berry <aaron.abm@gmail.com>",
 	"repository": {
