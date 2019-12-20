@@ -1,26 +1,40 @@
 {
-  "name": "jsonresume-theme-spartan-extended",
-  "version": "0.0.0-development",
-  "description": "Extended version of the spartan them to a extended JSON resume format",
-  "author": "Aaron Berry <aaron.abm@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Aaron-K-T-Berry/jsonresume-theme-spartan.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "country-code-lookup": "0.0.15",
-    "handlebars": ">=4.0.11",
-    "moment": ">=2.20.1"
-  },
-  "devDependencies": {
-    "@semantic-release/git": "^7.0.18",
-    "resume-cli": "^1.2.7",
-    "semantic-release": "^15.13.31",
-    "semantic-release-cli": "^5.2.3"
-  },
-  "scripts": {
-    "start": "resume serve",
-    "semantic-release": "semantic-release"
-  }
+	"name": "jsonresume-theme-spartan-extended",
+	"version": "0.0.0-development",
+	"description": "Extended version of the spartan them to a extended JSON resume format",
+	"author": "Aaron Berry <aaron.abm@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Aaron-K-T-Berry/jsonresume-theme-spartan.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"country-code-lookup": "0.0.15",
+		"handlebars": ">=4.0.11",
+		"moment": ">=2.20.1"
+	},
+	"devDependencies": {
+		"@semantic-release/git": "^7.0.18",
+		"commitizen": "^4.0.3",
+		"cz-conventional-changelog": "^3.0.2",
+		"husky": "^3.1.0",
+		"resume-cli": "^1.2.7",
+		"semantic-release": "^15.13.31",
+		"semantic-release-cli": "^5.2.3"
+	},
+	"scripts": {
+		"commit": "git-cz",
+		"start": "resume serve",
+		"semantic-release": "semantic-release"
+	},
+	"husky": {
+		"hooks": {
+			"prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+		}
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
 }
