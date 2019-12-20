@@ -15,6 +15,7 @@
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^7.0.18",
+		"@semantic-release/npm": "^5.3.4",
 		"commitizen": "^4.0.3",
 		"cz-conventional-changelog": "^3.0.2",
 		"husky": "^3.1.0",
