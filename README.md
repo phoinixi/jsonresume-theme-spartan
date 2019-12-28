@@ -30,3 +30,9 @@ Things i changed:
 - Skills
 
   - Added optional summary line for skill
+
+## Examples
+
+|                       HTML Full                       |                     HTML Mobile                     |
+| :---------------------------------------------------: | :-------------------------------------------------: |
+| ![html example desktop](./images/example-desktop.png) | ![html example mobile](./images/example-mobile.png) |
