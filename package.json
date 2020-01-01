@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-spartan",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Minimal, clean and elegant theme for JSON Resume",
   "author": "Francesco Esposito <fraesps@gmail.com>",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": ">=4.0.11",
-    "moment": ">=2.20.1"
+    "handlebars": ">=4.5.3",
+    "moment": ">=2.24.0"
   }
 }
