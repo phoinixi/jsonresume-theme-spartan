@@ -52,7 +52,7 @@ Check out the [examples](#Examples) below.
 
 - Education
 
-  - Im proved handling of present education
+  - Improved handling of present education
 
 - Skills
 
