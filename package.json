@@ -9,25 +9,28 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"country-code-lookup": "0.0.15",
-		"handlebars": ">=4.0.11",
-		"moment": ">=2.20.1"
+		"country-code-lookup": "^0.0.20",
+		"handlebars": "^4.7.7",
+		"moment": "^2.29.1"
 	},
 	"devDependencies": {
-		"@semantic-release/git": "^7.0.18",
-		"@semantic-release/npm": "^5.3.4",
-		"commitizen": "^4.0.3",
-		"cz-conventional-changelog": "^3.0.2",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/npm": "^8.0.3",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^3.1.0",
-		"resume-cli": "^1.2.7",
-		"semantic-release": "^15.13.31",
-		"semantic-release-cli": "^5.2.3"
+		"prettier": "^2.5.1",
+		"resume-cli": "^3.0.5",
+		"semantic-release": "^18.0.1",
+		"semantic-release-cli": "^5.4.4"
 	},
 	"scripts": {
-		"commit": "git-cz",
-		"start": "npm run link-resume && resume serve",
-		"semantic-release": "semantic-release",
-		"link-resume": "ln -sF resume.example.json resume.json"
+		"commit": "./node_modules/.bin/git-cz",
+		"setup": "ln -sf resume.example.json resume.json",
+		"lint": "./node_modules/.bin/prettier --write ./index.js ./public/index.html",
+		"build": "rm -f ./public/index.html && ./node_modules/.bin/resume export ./public/index.html --theme .",
+		"start": "./node_modules/.bin/resume serve --theme .",
+		"semantic-release": "semantic-release"
 	},
 	"husky": {
 		"hooks": {}
