@@ -119,19 +119,18 @@
 						{{/each}}
 					</div>
 				{{/if}}
-			</section>
 
-			{{#if summary}}
-				<section class="section main-summary">
-					<h2 class='section-title'>About</h2>
-					<section>
-						<div class="summary-content">
-							{{paragraphSplit summary}}
-						</div>
-					</section>
-			{{/if}}
+        {{#if summary}}
+          <section class="section main-summary">
+            <h2 class='section-title'>About</h2>
+            <section>
+              <div class="summary-content">
+                {{paragraphSplit summary}}
+              </div>
+            </section>
+          </section>
+        {{/if}}
 
-			</section>
 			</section>
 		{{/resume.basics}}
 
@@ -294,7 +293,6 @@
 						</div>
 					{{/each}}
 				</section>
-
 			</section>
 		{{/if}}
 
@@ -326,6 +324,7 @@
 											- Present
 										</span>
 									{{/if}}
+								</div>
 
 							</header>
 						{{/if}}
